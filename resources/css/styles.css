@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+:root {
+    --bg-light: #fff;
+    --blue: #A7BBC7;
+    --light-blue: #E1E5EA;
+    --pink: #DA7F8F;
+    --light-pink: #FAF3F3; 
+    --dark-grey: #232323;
+
+    --menu-speed: 0.75s;
+}
+
+html {
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-light);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Secular One', sans-serif;
+}
+
+/* Header */ 
+
+header {
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navbar-light);
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header > p {
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-left: 30px; 
+}
+
+/* Welcome section */ 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.welcome-container {
+    background-color: var(--light-blue);
+    position: absolute;
+    top: 2.5rem;
+    height: 80vh;
+    width: 100vw;
+    margin: 0.1rem;
+    border: 20px solid #fff;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.welcome-container h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--dark-grey);
+}
+
+.welcome-container h2 {
+    font-size: 1.250rem;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--dark-grey);
+}
+
+.welcome-container p {
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: .150rem;
+}
+
+.welcome-container span {
+    color: var(--navbar-light);
+}
+
+.welcome-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    font-size: 1.750rem;
+}
+
+.welcome-contact > div {
+    display: inline-flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.welcome-contact a {
+    color: var(--navbar-light);
+    text-decoration: none;
+}
+
+.contact-btn {
+    margin-top: 2rem;
+    min-width: 130px;
+    height: 35px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: var(--pink);
+}
