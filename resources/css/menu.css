@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--bg-light);
     width: 100%;
     top: 0;
     right: 0;
@@ -18,10 +19,9 @@
 
 .menu-wrap .toggler {
     position: absolute;
-    top: 0;
-    right: 0;
     z-index: 2;
     cursor: pointer;
+    right: 1rem;
     width: 50px;
     height: 50px;
     opacity: 0;
@@ -32,10 +32,9 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 0; 
-    right: 0;
-    width: 30px;
-    height: 30px;
+    right: 1rem;
+    width: 4.750rem;
+    height: 4.750rem;
     padding: 1.5rem;
     z-index: 1;
 }
@@ -46,11 +45,12 @@
     position: relative;
     width: 100%;
     height: 4px;
-    background-color: var(--pink);
+    background-color: var(--dark-grey);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    padding: .1rem;
     transition: all  0.4s ease;
 }
 /* Top and bottom lines */ 
@@ -64,7 +64,7 @@
     width: 100%;
     height: 4px;
     background: inherit;
-
+    padding: 0.1rem;
     border-radius: 5px;
 }
 
@@ -120,10 +120,10 @@
 }
 
 .menu-wrap .menu > div {
-    background: var(--light-pink);
+    background: var(--light-grey);
     border-radius: 50%;
-    width: 200vh;
-    height: 200vh;
+    width: 150vh;
+    height: 150vh;
     display: flex;
     flex: none;
     align-items: center;
