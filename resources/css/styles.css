@@ -54,7 +54,6 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    opacity: 0.7;
 }
 
 header > p {
@@ -198,6 +197,7 @@ section {
 
     .welcome-container h1 {
         font-size: 4rem;
+        font-weight: 700;
     }
 
     .welcome-container h2 {
@@ -220,6 +220,10 @@ section {
         margin-bottom: 1rem;
     }
 
+    .social-icons a:hover{
+        color: var(--bright-green);
+    }
+
     .arrow img {
         width: 130px;
         height: 130px;
@@ -228,9 +232,41 @@ section {
     }
 
     .contact-btn {
-        margin: 0;
+        padding: 10px;
+        font-size: 15px;
+        outline: none;
+        border: 2px solid black;
+        background-color: white;
+        color: white;
+        position: relative;
+        margin-bottom: 2rem;
     }
 
+    .contact-btn::before {
+        content: 'Contact me';
+        /*Button's value/text-content */
+        position: absolute;
+        top: -14%;
+        left: -4%;
+        background-color: var(--pink);
+        border: 0.150rem solid var(--dark-grey);
+        border-radius: 0.2rem;
+        width: 100%;
+        height: 100%;
+        color: var(--bg-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.15s ease-in-out;
+        font-weight: bold;
+    }
+    
+    .contact-btn:hover::before {
+        background-color: var(--bright-green);
+        border: none;
+        top: 0;
+        left: 0;
+    }
 }
 
 /* Projects section*/
@@ -320,20 +356,82 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    color: var(--bg-light);
+    font-size: 0.950rem;
 }
 
-.about-container img {
+.about-container #desktop-avatar {
     display: none;
 }
 
+.signature {
+    display: none;
+}
+
+.about-text h1 {
+    color: var(--bg-light);
+    font-family: 'Secular One', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.about-text p {
+    width: 80vw;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 @media only screen and (min-width: 1440px) {
+    .about-container-outer {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
 
     .about-container {
-        background: url('/resources/images/abstract-envelope.png') no-repeat center / cover;
-        height: 100%;
+        display: flex;
+        flex-direction: row;
+        background: url('/resources/images/diamond-sunset.png') no-repeat center / cover;
+        /* background by SVGBackgrounds.com */
+        height: 100vh;
         width: 100%;
         position: relative;
+    }
+
+    .about-container > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 3rem;
+    }
+
+    .about-container h1 {
+        margin-left: 1rem;
+    }
+
+    .about-container p {
+        width: 60vh;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .about-container .my-skills {
+        font-size: 1.5rem;
+    }
+
+    .about-text span {
+        font-family: 'Secular One', sans-serif;
+        font-size: 1.050rem;
+    }
+
+    .about-container #desktop-avatar {
+        display: block;
+    }
+
+    .about-container .signature {
+        height: 120px;
+        margin: 2rem 0 0 1rem;
     }
 
     .about-container img {
@@ -345,6 +443,12 @@ section {
 
 .contact-container-outer {
     height: 100vh;
+    background: url('/resources/images/liquid-cheese.png') no-repeat center / cover;
+    /* background by SVGBackgrounds.com */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-container {
@@ -352,70 +456,83 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--light-grey);
-    height: 90vh;
-    width: 100%;
-    margin: 1.250rem;
-}
-/* 
-.contact-container:after {
-    content: '';
-    position: relative;
-    background: url(/resources/images/pexels-photo-7087668.jpeg) no-repeat center / cover;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    mix-blend-mode: soft-light;
-}
- */
-.contact-container h1 {
-    font-size: 2.5rem;
-    color: var(--dark-grey);
+    height: 100vh;
 }
 
-form {
+.contact-container h1 {
+    font-size: 2rem;
+    color: var(--bg-light);
+    margin-bottom: 3rem;
+}
+
+.contact-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    margin-top: 2rem;
-    color: var(--light-blue);
-}
-
-.contact-form .row {
-    background-color: var(--bg-light);
-    color: var(--light-blue);
-    height: 30px;
-    width: 250px;
-    border-radius: 0.2rem;
-    margin: 0.250rem;
-    padding: .5rem;
-}
-
-.contact-form .block {
-    background-color: var(--bg-light);
-    height: 170px;
-    width: 250px;
-    border-radius: 0.2rem;
-    margin: 0.250rem 0 0.5rem;
-    padding: 0.5rem;
-}
-
-input[type="text"] {
-    color: var(--light-blue);
-}
-input[type="button"] {
-    background-color: var(--yellow);
-    width: 250px;
     color: var(--bg-light);
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 0.2rem;
-    padding: 0.5rem;
+    border: .250rem solid var(--bg-light);
+    border-radius: 0.5rem;
+    padding: 1.5rem .5rem;
 }
 
 .contact-container img {
-    margin-top: .750rem;
-    width: 200px;
+    width: 60vw;
+    height: auto;
+}
+
+.contact-text p {
+    margin-bottom: 2rem;
+}
+
+.contact-text a {
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 2px solid var(--dark-grey);
+    background-color: white;
+    color: white;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.contact-text a::before {
+    content: 'Say Hello 💃';
+    /*Button's value/text-content */
+    position: absolute;
+    top: -14%;
+    left: 7%;
+    background-color: var(--pink);
+    border: 2px solid var(--dark-grey);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s ease-in-out;
+    font-weight: bold;
+}
+
+.contact-text a:hover::before {
+    border: 2px solid transparent;
+    top: 0;
+    left: 0;
+}
+
+.contact-text a:hover {
+    background-color: var(--dark-green);
+    color: var(--bg-light);
+    border: .150rem solid var(--bg-light);
+}
+
+@media only screen and (min-width: 1440px) {
+    .contact-container img {
+        width: 20vw;
+        height: auto;
+    }
+
+    .contact-text {
+        padding: 3rem 7rem;
+    }
 }
