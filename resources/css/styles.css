@@ -501,7 +501,7 @@ section {
     /*Button's value/text-content */
     position: absolute;
     top: -14%;
-    left: 7%;
+    left: 5%;
     background-color: var(--pink);
     border: 2px solid var(--dark-grey);
     width: 100%;
