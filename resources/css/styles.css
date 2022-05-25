@@ -391,7 +391,7 @@ section {
     .about-container {
         display: flex;
         flex-direction: row;
-        background: url('/resources/images/diamond-sunset.png') no-repeat center / cover;
+        background: url('../resources/images/diamond-sunset.png') no-repeat center / cover;
         /* background by SVGBackgrounds.com */
         height: 100vh;
         width: 100%;
@@ -443,7 +443,7 @@ section {
 
 .contact-container-outer {
     height: 100vh;
-    background: url('/resources/images/liquid-cheese.png') no-repeat center / cover;
+    background: url('../resources/images/liquid-cheese.png') no-repeat center / cover;
     /* background by SVGBackgrounds.com */
     display: flex;
     flex-direction: column;
