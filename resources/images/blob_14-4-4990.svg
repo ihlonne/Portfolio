@@ -1,0 +1,18 @@
+<svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+  <g transform="translate(-263, 32)">
+    <defs>
+      <pattern id="pattern" x="0" y="0" width="20" height="12" patternUnits="userSpaceOnUse" fill="#d1d8e0">
+        <path d="M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z"></path>
+      </pattern>
+    </defs>
+    <path class="blob" d="M464,298Q449,346,389.5,348Q330,350,317,417.5Q304,485,257,456Q210,427,179.5,402Q149,377,134.5,345Q120,313,79.5,281.5Q39,250,60,209.5Q81,169,89,114Q97,59,146.5,36.5Q196,14,243,43.5Q290,73,332.5,83Q375,93,415.5,122Q456,151,467.5,200.5Q479,250,464,298Z" fill="url(#pattern)"></path>
+  </g>
+  <g transform="translate(374, 232)">
+    <defs>
+      <pattern id="pattern" x="0" y="0" width="20" height="12" patternUnits="userSpaceOnUse" fill="#d1d8e0">
+        <path d="M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z"></path>
+      </pattern>
+    </defs>
+    <path class="blob" d="M464,298Q449,346,389.5,348Q330,350,317,417.5Q304,485,257,456Q210,427,179.5,402Q149,377,134.5,345Q120,313,79.5,281.5Q39,250,60,209.5Q81,169,89,114Q97,59,146.5,36.5Q196,14,243,43.5Q290,73,332.5,83Q375,93,415.5,122Q456,151,467.5,200.5Q479,250,464,298Z" fill="url(#pattern)"></path>
+  </g>
+</svg>
