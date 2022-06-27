@@ -14,8 +14,8 @@
 
     --text: hsl(0, 0%, 100%);
 
-    --logo: url('/resources/images/IHL-logo3-red.png');
-    --logo-hover: url('/resources/images/IHL-logo3-plum.png');
+    --logo: url('../resources/images/IHL-logo3-red.png');
+    --logo-hover: url('../resources/images/IHL-logo3-plum.png');
 }
 
 .darkmode {
@@ -31,8 +31,8 @@
 
     --text: hsl(0, 0%, 100%);
 
-    --logo: url('/resources/images/IHL-logo3-white.png');
-    --logo-hover: url('/resources/images/IHL-logo3-green.png');
+    --logo: url('../resources/images/IHL-logo3-white.png');
+    --logo-hover: url('../resources/images/IHL-logo3-green.png');
 }
 
 html, body {
